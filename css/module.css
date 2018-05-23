@@ -3,14 +3,17 @@
 -------------------------------------------------------*/
 
 .btn {
+  border: 0;
   display: inline-block;
   padding: 13px 30px;
   text-align: center;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 5px;
+  font-weight: bold;
   letter-spacing: .07em;
-  font-size: 15px;
+  font-size: 16px;
   margin-right: 5px;
+  cursor: pointer;
   margin-left: 5px;
   -webkit-transition: opacity .2s ease-in-out;
      -moz-transition: opacity .2s ease-in-out;
@@ -27,6 +30,11 @@
 
 .btn-01 {
   background: #15b0ed;
+  color: #fff;
+}
+
+.btn-02 {
+  background: #2dd486;
   color: #fff;
 }
 
@@ -110,6 +118,34 @@
   border-radius: 3px;
   line-height: 1em;
   margin-left: 10px;
+}
+
+/* bg-full
+============================================================ */
+
+.bg-full {
+  position: relative;
+}
+.bg-full:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  min-width: 960px;
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+@media screen and (max-width: 811px) {
+
+  .bg-full:before {
+    min-width: 100%;
+  }
+
 }
 
 
