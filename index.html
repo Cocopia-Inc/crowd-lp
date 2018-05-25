@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./css/slick-theme.css">
   <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css" />
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
   <script src="./js/jquery-3.3.1.min.js"></script>
   <script src="./js/slick.min.js"></script>
@@ -35,8 +36,8 @@
       <div class="header_menu">
         <ul>
           <li>
-            <p>受付時間 10:00〜18:00（土日祝除く）</p>
-            <p>03-1234-5678</p>
+            <p class="header_menu_time">受付時間 10:00〜18:00（土日祝除く）</p>
+            <p class="header_menu_tel">03-1234-5678</p>
           </li>
           <li><a href="#contact_bottom" class="btn btn-01">お問い合わせ</a></li>
         </ul>
@@ -44,7 +45,7 @@
     </div>
   </header>
 
-  <section class="top_hero">
+  <section class="top_hero top_hero_01">
     <h1 class="top_hero_tagline">障がい者のためのお仕事マッチングサービス</h1>
     <p class="top_hero_desc">自分にあった仕事を見つけたい。仕事をお願いしたい。<br>そんな人と人が、ともに多様性を受入れる社会を作っていくためのプラットフォームです。</p>
     <a href="#contact_bottom" class="btn btn-01">さっそく問い合わせる</a>
@@ -53,7 +54,7 @@
   <div class="content_wrapper">
 
     <section class="section_item">
-      <div class="section_title">
+      <div class="section_select">
         <h2>あなたはどちらですか？</h2>
         <a href="" class="btn btn-01">企業の方 / 仕事を依頼したい</a>
         <a href="" class="btn btn-01">障がいをお持ちの方 / 仕事を見つけたい</a>
@@ -67,28 +68,28 @@
       </div>
       <ul class="works_sample">
         <li>
-          <img src="http://via.placeholder.com/350x200">
+          <img src="./img/top/img-works-01.png" alt="記事ライティング">
           <div class="works_sample_content">
             <h3>記事ライティング</h3>
             <p>エンタメ好き歓迎！バラエティ番組についての感想ライティング（3000字）</p>
           </div>
         </li>
         <li>
-          <img src="http://via.placeholder.com/350x200">
+          <img src="./img/top/img-works-02.png" alt="AIアノテーション">
           <div class="works_sample_content">
             <h3>AIアノテーション</h3>
             <p>人口知能の開発のサポート。10〜30秒の動画や画像へのデータ入力</p>
           </div>
         </li>
         <li>
-          <img src="http://via.placeholder.com/350x200">
+          <img src="./img/top/img-works-03.png" alt="動画作成">
           <div class="works_sample_content">
             <h3>動画作成</h3>
             <p>顧客に向けたマーケティング動画の作成代行</p>
           </div>
         </li>
         <li>
-          <img src="http://via.placeholder.com/350x200">
+          <img src="./img/top/img-works-04.png" alt="サイト運用">
           <div class="works_sample_content">
             <h3>サイト運用</h3>
             <p>ソーシャルメディアへの投稿代理をお願いします（文章提供）</p>
@@ -98,27 +99,39 @@
 
       <ul class="works_list">
         <li>
-          <img src="http://via.placeholder.com/120x120">
+          <div class="works_list_icon">
+            <i class="fas fa-video"></i>
+          </div>
           <p>画像・動画編集</p>
         </li>
         <li>
-          <img src="http://via.placeholder.com/120x120">
+          <div class="works_list_icon">
+            <i class="fas fa-tv"></i>
+          </div>
           <p>ホームページ更新</p>
         </li>
         <li>
-          <img src="http://via.placeholder.com/120x120">
+          <div class="works_list_icon">
+            <i class="fas fa-table"></i>
+          </div>
           <p>データ収集・入力</p>
         </li>
         <li>
-          <img src="http://via.placeholder.com/120x120">
+          <div class="works_list_icon">
+            <i class="fas fa-pencil-alt"></i>
+          </div>
           <p>記事ライティング</p>
         </li>
         <li>
-          <img src="http://via.placeholder.com/120x120">
+          <div class="works_list_icon">
+            <i class="far fa-comment-dots"></i>
+          </div>
           <p>AIアノテーション</p>
         </li>
         <li>
-          <img src="http://via.placeholder.com/120x120">
+          <div class="works_list_icon">
+            <i class="far fa-address-book"></i>
+          </div>
           <p>求人広告作成</li>
         </li>
       </ul>
@@ -192,7 +205,7 @@
           <ul>
             <li>
               <label>氏名<span class="form_required">必須</span></label>
-              <input type="text" name="" class="form_basic" placeholder="此処皮亜太郎" required>
+              <input type="text" name="" class="form_basic" placeholder="ココピア太郎" required>
             </li>
             <li>
               <label>フリガナ<span class="form_required">必須</span></label>
@@ -215,10 +228,8 @@
   </div>
 
   <footer class="footer">
-    <div class="footer-pagetop">
-      <p>障がい者特化型 お仕事マッチングサービス「ココピアクラウド」</p>
-      <p>©cocopira crowd All rights reserved.</p>
-    </div>
+    <p>障がい者特化型 お仕事マッチングサービス「ココピアクラウド」</p>
+    <p>©cocopira crowd All rights reserved.</p>
   </footer>
 
 

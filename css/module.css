@@ -120,6 +120,21 @@
   margin-left: 10px;
 }
 
+.form_basic_textarea {
+  min-height: 80px;
+}
+
+.form_basic_select {
+  position: relative;
+}
+
+.form_basic_select i {
+  color: #777;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+
 /* bg-full
 ============================================================ */
 

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./css/slick-theme.css">
   <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css" />
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
   <script src="./js/jquery-3.3.1.min.js"></script>
   <script src="./js/slick.min.js"></script>
@@ -35,8 +36,8 @@
       <div class="header_menu">
         <ul>
           <li>
-            <p>受付時間 10:00〜18:00（土日祝除く）</p>
-            <p>03-1234-5678</p>
+            <p class="header_menu_time">受付時間 10:00〜18:00（土日祝除く）</p>
+            <p class="header_menu_tel">03-1234-5678</p>
           </li>
           <li><a href="#contact_bottom" class="btn btn-01">お問い合わせ</a></li>
         </ul>
@@ -44,9 +45,13 @@
     </div>
   </header>
 
-  <section class="top_hero">
+  <section class="top_hero top_hero_01">
     <h1 class="top_hero_tagline">そのお仕事、私たちプロフェッショナルに、お任せください。</h1>
-    <p class="top_hero_desc">障がいを持ちながら働く多様な人材から、最適なタレントがあなたのお仕事をサポートします。<br>取り引きを通じて、よりよい障がい者雇用を考えるきっかけも提供できます。多様性を受け入れる社会・文化を共につくっていきましょう。</p>
+    <p class="top_hero_desc">
+      障がいを持ちながら働く多様な人材から、最適なタレントがあなたのお仕事をサポートします。<br>
+      取り引きを通じて、よりよい障がい者雇用を考えるきっかけも提供できます。<br>
+      多様性を受け入れる社会・文化を共につくっていきましょう。
+    </p>
     <a href="#contact_bottom" class="btn btn-01">さっそく問い合わせる</a>
   </section>
 
@@ -62,8 +67,10 @@
       </div>
       <ul class="enterpriseWorks_list">
         <li class="enterpriseWorks_item">
-          <img src="http://via.placeholder.com/100x100">
-          <div class="works_sample_content">
+          <div class="enterpriseWorks_icon">
+            <i class="fas fa-check-square"></i>
+          </div>
+          <div class="enterpriseWorks_content">
             <h3>簡単作業</h3>
             <ul>
               <li>質問・アンケート</li>
@@ -73,8 +80,10 @@
           </div>
         </li>
         <li class="enterpriseWorks_item">
-          <img src="http://via.placeholder.com/100x100">
-          <div class="works_sample_content">
+          <div class="enterpriseWorks_icon">
+            <i class="fas fa-pencil-alt"></i>
+          </div>
+          <div class="enterpriseWorks_content">
             <h3>ライティング・記事作成</h3>
             <ul>
               <li>ブログ記事作成</li>
@@ -85,8 +94,10 @@
           </div>
         </li>
         <li class="enterpriseWorks_item">
-          <img src="http://via.placeholder.com/100x100">
-          <div class="works_sample_content">
+          <div class="enterpriseWorks_icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <div class="enterpriseWorks_content">
             <h3>画像・動画編集</h3>
             <ul>
               <li>動画作成・動画制作</li>
@@ -97,8 +108,10 @@
           </div>
         </li>
         <li class="enterpriseWorks_item">
-          <img src="http://via.placeholder.com/100x100">
-          <div class="works_sample_content">
+          <div class="enterpriseWorks_icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="enterpriseWorks_content">
             <h3>システム開発</h3>
             <ul>
               <li>サイト構築・ウェブ開発</li>
@@ -109,8 +122,10 @@
           </div>
         </li>
         <li class="enterpriseWorks_item">
-          <img src="http://via.placeholder.com/100x100">
-          <div class="works_sample_content">
+          <div class="enterpriseWorks_icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="enterpriseWorks_content">
             <h3>ホームページ制作</h3>
             <ul>
               <li>ホームページ作成</li>
@@ -121,8 +136,10 @@
           </div>
         </li>
         <li class="enterpriseWorks_item">
-          <img src="http://via.placeholder.com/100x100">
-          <div class="works_sample_content">
+          <div class="enterpriseWorks_icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="enterpriseWorks_content">
             <h3>リサーチ</h3>
             <ul>
               <li>市場調査</li>
@@ -133,8 +150,10 @@
           </div>
         </li>
         <li class="enterpriseWorks_item">
-          <img src="http://via.placeholder.com/100x100">
-          <div class="works_sample_content">
+          <div class="enterpriseWorks_icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <div class="enterpriseWorks_content">
             <h3>マーケティング</h3>
             <ul>
               <li>SNS運用</li>
@@ -144,8 +163,10 @@
           </div>
         </li>
         <li class="enterpriseWorks_item">
-          <img src="http://via.placeholder.com/100x100">
-          <div class="works_sample_content">
+          <div class="enterpriseWorks_icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <div class="enterpriseWorks_content">
             <h3>資料作成</h3>
             <ul>
               <li>プレゼン資料</li>
@@ -164,31 +185,41 @@
       </div>
       <ul class="enterpriseFlow_list">
         <li>
-          <img src="http://via.placeholder.com/100x100">
+          <div class="enterpriseFlow_icon">
+            <i class="fas fa-user-circle"></i>
+          </div>
           <span>STEP1</span>
           <h3>登録する</h3>
           <p>サイト上から、企業情報を登録していただきます </p>
         </li>
         <li>
-          <img src="http://via.placeholder.com/100x100">
+          <div class="enterpriseFlow_icon">
+            <i class="fas fa-desktop"></i>
+          </div>
           <span>STEP2</span>
           <h3>仕事を依頼する</h3>
           <p>登録後、ココピアクラウドからお仕事依頼フォームを送付します。フォームの受診後、スタッフが具体的なニーズをヒアリングします </p>
         </li>
         <li>
-          <img src="http://via.placeholder.com/100x100">
+          <div class="enterpriseFlow_icon">
+            <i class="far fa-handshake"></i>
+          </div>
           <span>STEP3</span>
           <h3>契約する</h3>
           <p>ヒアリングをベースに、依頼する仕事の内容を擦り合わせ、契約します</p>
         </li>
         <li>
-          <img src="http://via.placeholder.com/100x100">
+          <div class="enterpriseFlow_icon">
+            <i class="far fa-calendar-alt"></i>
+          </div>
           <span>STEP4</span>
           <h3>納品を待つ</h3>
           <p>ワーカーの確保、仕事依頼、マニュアル作成、検収作業などはココピアクラウドがワンストップで行います。</p>
         </li>
         <li>
-          <img src="http://via.placeholder.com/100x100">
+          <div class="enterpriseFlow_icon">
+            <i class="fas fa-money-check"></i>
+          </div>
           <span>STEP5</span>
           <h3>支払う</h3>
           <p>納品に問題がなければ、ココピアクラウドに業務委託料をお支払いいただきます</p>
@@ -210,7 +241,7 @@
       <div class="section_title">
         <h2>サービスの強み</h2>
       </div>
-      <ul class="enterpriseFlow_list">
+      <ul class="features_list">
         <li>
           <img src="http://via.placeholder.com/100x100">
           <h3>ワンストップソリューション</h3>
@@ -218,7 +249,7 @@
         </li>
         <li>
           <img src="http://via.placeholder.com/100x100">
-          <h3>ジョブトレーナーが仕事のクオリティをコントロール</h3>
+          <h3>ジョブトレーナーが仕事の<br>クオリティをコントロール</h3>
           <p>様々な仕事に経験を持つスタッフ（ジョブトレーナー）が窓口となり、仕事の品質をコントロールし、納品を行うことでミスマッチをなくしています。 </p>
         </li>
         <li>
@@ -272,12 +303,20 @@
         <form>
           <ul>
             <li>
+              <label>会社名<span class="form_required">必須</span></label>
+              <input type="text" name="" class="form_basic" placeholder="此処皮亜太郎" required>
+            </li>
+            <li>
               <label>氏名<span class="form_required">必須</span></label>
               <input type="text" name="" class="form_basic" placeholder="此処皮亜太郎" required>
             </li>
             <li>
               <label>フリガナ<span class="form_required">必須</span></label>
               <input type="text" name="" class="form_basic" placeholder="ココピアタロウ" required>
+            </li>
+            <li>
+              <label>部署名</label>
+              <input type="text" name="" class="form_basic" placeholder="ココピアタロウ">
             </li>
             <li>
               <label>メールアドレス<span class="form_required">必須</span></label>
@@ -287,6 +326,11 @@
               <label>電話番号<span class="form_required">必須</span></label>
               <input type="text" name="" class="form_basic" placeholder="090-1234-5678" required>
             </li>
+            <li>
+              <label>問い合わせ内容<span class="form_required">必須</span></label>
+              <textarea cols="6" class="form_basic form_basic_textarea" placeholder="お問い合わせ内容をお書きください" required></textarea>
+            </li>
+
           </ul>
           <input type="submit" name="" value="送信する" class="btn btn-02">
         </form>
@@ -296,10 +340,8 @@
   </div>
 
   <footer class="footer">
-    <div class="footer-pagetop">
-      <p>障がい者特化型 お仕事マッチングサービス「ココピアクラウド」</p>
-      <p>©cocopira crowd All rights reserved.</p>
-    </div>
+    <p>障がい者特化型 お仕事マッチングサービス「ココピアクラウド」</p>
+    <p>©cocopira crowd All rights reserved.</p>
   </footer>
 
 
