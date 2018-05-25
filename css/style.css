@@ -483,9 +483,23 @@ LP 2
   line-height: 1.6em;
 }
 
+.features_list img {
+  margin-bottom: 15px;
+}
+
 .features_list p {
   text-align: justify;
   color: #777;
+}
+
+/* case study */
+.caseStudy_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.caseStudy_list li {
+  width: calc(33.33% - 20px);
 }
 
 /* ----------------------------------------------------
