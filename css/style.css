@@ -60,6 +60,13 @@ body {
   padding: 15px 50px;
 }
 
+.section_contact_complete {
+  font-weight: bold;
+  text-align: center;
+  color: #2dd486;
+  display: none;
+}
+
 @media screen and (max-width: 811px) {
   body {
     overflow: visible;
@@ -81,7 +88,7 @@ body {
 
   .section_title h2 {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .section_title p {
@@ -429,6 +436,17 @@ body {
 
 .section_about_img {
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 811px) {
+
+  .section_about .btn {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px 5px;
+  }
+
+
 }
 
 /* faq
@@ -853,7 +871,7 @@ LP 3
   }
 
   .userVoice_list li img {
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
   }
 
   .userVoice_list p {
@@ -862,6 +880,19 @@ LP 3
 
 }
 
+/* support */
+.section_support .btn {
+  margin: 20px auto 0;
+}
+
+@media screen and (max-width: 811px) {
+
+  .section_support .btn {
+    margin: 20px 0 0;
+    width: 100%;
+  }
+
+}
 /* use flow*/
 
 .userFlow_list {

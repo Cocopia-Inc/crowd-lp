@@ -10,7 +10,6 @@
   <link href="//fonts.googleapis.com/earlyaccess/notosansjp.css">
   <link rel="stylesheet" href="./css/default.css">
   <link rel="stylesheet" href="./css/module.css">
-  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="./css/slick-theme.css">
   <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css" />
@@ -18,8 +17,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
   <script src="./js/jquery-3.3.1.min.js"></script>
-  <script src="./js/slick.min.js"></script>
-  <script src="./js/wow.min.js"></script>
   <script src="./js/common.js"></script>
 
 </head>
@@ -263,16 +260,20 @@
       </ul>
     </section>
 
-    <section class="section_item section_item-bg bg-full">
+    <section class="section_item section_support section_item-bg bg-full">
       <div class="section_title">
         <h2>個別サポートについて</h2>
       </div>
       <div>
-        （デザインは、これを参照） 
-        ココピアクラウド　ジョブトレーナー　（無料） 
-        ココピアクラウドでは、登録ワーカーの方が理想的な働き方を確立するためのサポートを行っています。 
-        一人ひとりに合った「働き方」をみつけていけるように、その人の状況や目標、スキルに合わせて、仕事の提案を行っています。 
-        また、各仕事にはジョブトレーナーがついています。徐々にスキルをアップしていきたい方も、学びながら働くことができます。
+        <p>（デザインは、これを参照） 
+          ココピアクラウド　ジョブトレーナー　（無料） 
+          ココピアクラウドでは、登録ワーカーの方が理想的な働き方を確立するためのサポートを行っています。 
+          一人ひとりに合った「働き方」をみつけていけるように、その人の状況や目標、スキルに合わせて、仕事の提案を行っています。 
+          また、各仕事にはジョブトレーナーがついています。徐々にスキルをアップしていきたい方も、学びながら働くことができます。
+        </p>
+        <div class="btn-center">
+          <a href="#contact_bottom" class="btn btn-02">さっそく問い合わせる</a>
+        </div>
       </div>
     </section>
 
@@ -339,7 +340,7 @@
         <p>お気軽になんでもお問い合わせください。ココピアクラウドのスタッフがご対応します。</p>
       </div>
       <div class="section_contact_wrap">
-        <form>
+        <form class="js_form_content">
           <ul>
             <li>
               <label>氏名<span class="form_required">必須</span></label>
@@ -374,8 +375,9 @@
               <textarea cols="6" class="form_basic form_basic_textarea" placeholder="お問い合わせ内容をお書きください" required></textarea>
             </li>
           </ul>
-          <input type="submit" name="" value="送信する" class="btn btn-02">
+          <input type="submit" name="" value="送信する" class="js_form_submit btn btn-02">
         </form>
+        <p class="section_contact_complete">問い合わせが完了しました。</p>
       </div>
     </section>
 
@@ -383,7 +385,7 @@
 
   <footer class="footer">
     <div class="footer-pagetop">
-      <p>障がい者特化型 お仕事マッチングサービス「ココピアクラウド」</p>
+      <p>障がい者特化型 お仕事マッチングサービス<br class="sp-only">「ココピアクラウド」</p>
       <p>©cocopia crowd All rights reserved.</p>
     </div>
   </footer>

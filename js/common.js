@@ -1,15 +1,5 @@
 $(function(){
 
-  // page top scroll
-  $(document).ready(function() {
-    var pagetop = $('.pagetop');
-    pagetop.click(function () {
-      $('body, html').animate({ scrollTop: 0 }, 500);
-      return false;
-    });
-  });
-
-
   // ページ内scroll
   $('a[href^="#"]').click(function() {
     // スクロールの速度
@@ -26,32 +16,11 @@ $(function(){
   });
 
 
-  //ハンバーガーメニュー
-  $(".menu-trigger").click(function() {
-    $(this).toggleClass("open");
-    if($(".menu-trigger").hasClass("open")) {
-      $(".menu").show();
-      $(".eylogo, .menu-overlay, .header-upper__logo").addClass("open");
-      setTimeout(function() {
-        $(".menu > ul").each(function(i) {
-          $(this).delay(90*i).animate({"opacity": 1, "left": 0}, 300);
-        });
-      }, 300);
-    } else {
-      $(".menu > ul").each(function() {
-        $(this).animate({"opacity": 0, "left": "50px"}, 300);
-      });
-      setTimeout(function() {
-        $(".menu").hide();
-      }, 500);
-      setTimeout(function() {
-        $(".eylogo, .menu-overlay, .header-upper__logo").removeClass("open");
-      }, 100);
-    }
+  $('.js_form_submit').click(function() {
+    $('.js_form_content').hide();
+    $('.section_contact_complete').show();
   });
 
-  // トップ動き wow.js
-  new WOW().init();
 
 
 });
