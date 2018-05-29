@@ -604,19 +604,19 @@ LP 2
 -------------------------------------------------------*/
 
 /* works example */
-.enterpriseWorks_list {
+.worksType_list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.enterpriseWorks_item {
+.worksType_item {
   width: calc(25% - 20px);
   margin-bottom: 40px;
   text-align: center;
 }
 
-.enterpriseWorks_icon {
+.worksType_icon {
   display: inline-block;
   border-radius: 50%;
   width: 100px;
@@ -626,44 +626,48 @@ LP 2
   margin-bottom: 20px;
 }
 
-.enterpriseWorks_icon i {
+.worksType_icon-enterprise {
+  border-radius: 5px;
+}
+
+.worksType_icon i {
   color: #fff;
   line-height: 100px;
   font-size: 40px;
 }
 
-.enterpriseWorks_content h3 {
+.worksType_content h3 {
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.enterpriseWorks_content li {
+.worksType_content li {
   color: #777;
 }
 
 @media screen and (max-width: 811px) {
 
-  .enterpriseWorks_item {
+  .worksType_item {
     width: calc(50% - 15px);
     margin-bottom: 20px;
   }
 
-  .enterpriseWorks_icon {
+  .worksType_icon {
     width: 80px;
     height: 80px;
   }
 
-  .enterpriseWorks_icon i {
+  .worksType_icon i {
     line-height: 80px;
     font-size: 30px;
   }
 
-  .enterpriseWorks_content h3 {
+  .worksType_content h3 {
     line-height: 1.6em;
     font-size: 16px;
   }
 
-  .enterpriseWorks_content li {
+  .worksType_content li {
     font-size: 14px;
   }
 
@@ -689,7 +693,7 @@ LP 2
 
 .enterpriseFlow_icon {
   display: inline-block;
-  border-radius: 50%;
+  border-radius: 5px;
   width: 100px;
   height: 100px;
   text-align: center;
