@@ -436,6 +436,7 @@ body {
 
 .section_about_img {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 @media screen and (max-width: 811px) {
