@@ -315,8 +315,13 @@ body {
 
   .top_hero_tagline {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 1.6em;
+  }
+
+  .top_hero_02 .top_hero_tagline {
+    line-height: 1.5em;
+    font-size: 24px;
   }
 
   .top_hero_desc {
