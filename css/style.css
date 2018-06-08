@@ -89,7 +89,7 @@ body {
 
   .section_title h2 {
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .section_title p {
@@ -774,13 +774,19 @@ LP 2
 @media screen and (max-width: 811px) {
 
   .enterpriseFlow_list li {
-    width: calc(50% - 15px);
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .enterpriseFlow_list li img {
     border-radius: 50%;
     margin-bottom: 15px;
+  }
+
+  .enterpriseFlow_icon_wrap {
+    width: 30%;
   }
 
   .enterpriseFlow_icon {
@@ -794,8 +800,22 @@ LP 2
     font-size: 30px;
   }
 
+  .enterpriseFlow_content {
+    width: calc(70% - 20px);
+  }
+
   .enterpriseFlow_list li h3 {
     font-size: 16px;
+    text-decoration: none;
+    text-align: left;
+  }
+
+  .enterpriseFlow_list li span {
+    text-align: left;
+  }
+
+  .enterpriseFlow_list li p {
+    text-align: left;
   }
 
 }
@@ -837,6 +857,22 @@ LP 2
   width: calc(33.33% - 20px);
 }
 
+.caseStudy_list li img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.caseStudy_list li p {
+  line-height: 1.8em;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.caseStudy_list li h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 811px) {
 
   .features_list {
@@ -864,8 +900,13 @@ LP 2
 
   .caseStudy_list li {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
+
+  .caseStudy_list li p {
+    font-size: 16px;
+  }
+
 
 }
 
