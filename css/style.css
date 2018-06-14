@@ -35,7 +35,7 @@ body {
 
 .section_title h2 {
   margin-bottom: 20px;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.6em;
   letter-spacing: .05em;
   font-weight: bold;
@@ -43,13 +43,20 @@ body {
 
 .section_title p {
   color: #777;
-  line-height: 2em;
+  font-size: 20px;
+  line-height: 1.8em;
   letter-spacing: .05em;
+}
+
+.section_item_contact {
+  padding: 60px 0;
 }
 
 .section_item_contact p {
   color: #fff;
   margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 2em;
   font-weight: bold;
 }
 
@@ -93,7 +100,23 @@ body {
   }
 
   .section_title p {
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+
+  .section_item_contact {
+    padding: 30px 0;
+  }
+
+  .section_item_contact p {
+    font-size: 16px;
+    line-height: 1.8em;
+    font-weight: bold;
+  }
+
+
+  p {
+    font-size: 16px;
   }
 
 }
@@ -104,7 +127,16 @@ body {
   width: auto;
   height: 70px;
   z-index: 100;
+  background: #fff;
   border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header + * {
+  margin-top: 70px;
 }
 
 .header-inner {
@@ -143,10 +175,19 @@ body {
   font-size: 31px;
 }
 
+.header_menu .btn {
+  font-size: 20px;
+}
+
+
 @media screen and (max-width: 811px) {
 
   .header {
     height: 50px;
+  }
+
+  .header + * {
+    margin-top: 50px;
   }
 
   .header-inner {
@@ -263,12 +304,18 @@ body {
 .top_hero .btn {
   padding: 18px 70px;
   margin-bottom: 20px;
+  font-size: 26px;
 }
 
+.top_hero_02,
+.top_hero_03 {
+  height: 580px;
+}
 
 .top_hero_03 .top_hero_tagline,
 .top_hero_02 .top_hero_tagline {
   line-height: 1.5em;
+  font-size: 48px;
 }
 
 .top_hero_03 .top_hero_desc,
@@ -319,9 +366,15 @@ body {
     line-height: 1.6em;
   }
 
+
   .top_hero_02 .top_hero_tagline {
     line-height: 1.5em;
     font-size: 24px;
+  }
+
+  .top_hero_03 .top_hero_tagline {
+    line-height: 1.5em;
+    font-size: 32px;
   }
 
   .top_hero_desc {
@@ -435,10 +488,6 @@ body {
     font-size: 14px;
   }
 
-  .works_sample_content p {
-    font-size: 14px;
-  }
-
   .works_list {
     flex-wrap: wrap;
   }
@@ -457,10 +506,6 @@ body {
   .works_list_icon i {
     line-height: 80px;
     font-size: 30px;
-  }
-
-  .works_list p {
-    font-size: 14px;
   }
 
 }
@@ -566,12 +611,12 @@ body {
   }
 
   .faq_q {
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
   }
 
   .faq_a {
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
   }
 
@@ -709,7 +754,7 @@ LP 2
   }
 
   .worksType_content li {
-    font-size: 14px;
+    font-size: 16px;
   }
 
 }
@@ -723,7 +768,7 @@ LP 2
 }
 
 .enterpriseFlow_list li {
-  width: calc(20% - 15px);
+  width: calc(20% - 20px);
   text-align: center;
 }
 
@@ -766,7 +811,7 @@ LP 2
 .enterpriseFlow_list li p {
   color: #777;
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8em;
   text-align: justify;
 }
@@ -889,10 +934,6 @@ LP 2
     font-size: 16px;
   }
 
-  .features_list p {
-    font-size: 14px;
-  }
-
   /* case study */
   .caseStudy_list {
     flex-wrap: wrap;
@@ -901,10 +942,6 @@ LP 2
   .caseStudy_list li {
     width: 100%;
     margin-bottom: 30px;
-  }
-
-  .caseStudy_list li p {
-    font-size: 16px;
   }
 
 
@@ -961,22 +998,48 @@ LP 3
     margin: 0 auto 15px;
   }
 
-  .userVoice_list p {
-    font-size: 14px;
-  }
-
 }
 
 /* support */
 .section_support .btn {
   margin: 20px auto 0;
+  padding: 20px 50px;
+  font-size: 24px;
+}
+
+.section_support_content {
+  text-align: center;
+}
+
+.section_support_content img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.section_support_content p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2em;
 }
 
 @media screen and (max-width: 811px) {
 
   .section_support .btn {
     margin: 20px 0 0;
+    padding: 20px;
     width: 100%;
+    font-size: 18px;
+  }
+
+  .section_support_content {
+    text-align: center;
+  }
+
+  .section_support_content p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.8em;
   }
 
 }
@@ -1065,7 +1128,7 @@ LP 3
   }
 
   .userFlow_list li h3 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1em;
     text-align: left;
     margin-bottom: 10px;
@@ -1077,7 +1140,6 @@ LP 3
   }
 
   .userFlow_list li p {
-    font-size: 14px;
     text-align: left;
   }
 
@@ -1139,10 +1201,6 @@ LP 3
 
   .section_plan_price span {
     font-size: 40px;
-  }
-
-  .section_plan_content > p {
-    font-size: 14px;
   }
 
 }

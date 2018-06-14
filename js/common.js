@@ -22,5 +22,12 @@ $(function(){
   });
 
 
+  // header
+  // $(window).on('scroll', function() {
+  //   var w = $(window).width();
+  //   var x = 1090;
+  //   $('#header').toggleClass('header-fixed', $(this).scrollTop() > 500);
+  // });
+
 
 });

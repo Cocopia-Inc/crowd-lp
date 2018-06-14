@@ -31,11 +31,13 @@
 .btn-01 {
   background: #15b0ed;
   color: #fff;
+  font-size: 24px;
 }
 
 .btn-02 {
   background: #2dd486;
   color: #fff;
+  font-size: 24px;
 }
 
 .btn-center {
@@ -47,6 +49,18 @@
 
   .btn {
     font-size: 16px;
+  }
+
+  .btn-01 {
+    background: #15b0ed;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .btn-02 {
+    background: #2dd486;
+    color: #fff;
+    font-size: 18px;
   }
 
 }
