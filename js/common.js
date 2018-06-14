@@ -2,15 +2,10 @@ $(function(){
 
   // ページ内scroll
   $('a[href^="#"]').click(function() {
-    // スクロールの速度
     var speed = 700; // ミリ秒
-    // アンカーの値取得
     var href= $(this).attr("href");
-    // 移動先を取得
     var target = $(href == "#" || href == "" ? 'html' : href);
-    // 移動先を数値で取得
     var position = target.offset().top;
-    // スムーススクロール
     $('body,html').animate({scrollTop:position}, speed, 'swing');
     return false;
   });
@@ -22,12 +17,27 @@ $(function(){
   });
 
 
-  // header
-  // $(window).on('scroll', function() {
-  //   var w = $(window).width();
-  //   var x = 1090;
-  //   $('#header').toggleClass('header-fixed', $(this).scrollTop() > 500);
-  // });
 
+});
 
+$(window).on("load resize", function() {
+  var winWidth = $(window).width();
+  if( (winWidth <= 811) ) {
+    // slick slider
+    $('.js-slider').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 2,
+      autoplay: true,
+      arrows: false,
+      responsive: [{
+        breakpoint: 500,settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }],
+    });
+  } else {
+    $('.js-slider').slick('unslick');
+  }
 });
