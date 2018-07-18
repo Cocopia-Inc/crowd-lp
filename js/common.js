@@ -11,10 +11,10 @@ $(function(){
   });
 
 
-  $('.js_form_submit').click(function() {
-    $('.js_form_content').hide();
-    $('.section_contact_complete').show();
-  });
+  // $('.js_form_submit').click(function() {
+  //   $('.js_form_content').hide();
+  //   $('.section_contact_complete').show();
+  // });
 
 
 
