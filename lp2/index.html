@@ -368,25 +368,25 @@
           <ul>
             <li>
               <label>氏名<span class="form_required">必須</span></label>
-              <input type="text" name="" class="form_basic" placeholder="此処皮亜太郎" required>
+              <input type="text" name="" class="form_basic" placeholder="此処皮亜太郎" required id="name">
             </li>
             <li>
               <label>フリガナ<span class="form_required">必須</span></label>
-              <input type="text" name="" class="form_basic" placeholder="ココピアタロウ" required>
+              <input type="text" name="" class="form_basic" placeholder="ココピアタロウ" required id="hurigana">
             </li>
             <li>
               <label>メールアドレス<span class="form_required">必須</span></label>
-              <input type="email" name="" class="form_basic" placeholder="your@email.com" required>
+              <input type="email" name="" class="form_basic" placeholder="your@email.com" required id="email">
             </li>
             <li>
               <label>電話番号</label>
-              <input type="text" name="" class="form_basic" placeholder="090-1234-5678">
+              <input type="text" name="" class="form_basic" placeholder="090-1234-5678" id="tel">
             </li>
             <li>
               <label>現在の状況</label>
               <div class="form_basic_select">
                 <i class="fas fa-angle-down"></i>
-                <select class="form_basic ">
+                <select class="form_basic " id="current_situation">
                   <option>選択してください</option>
                   <option>興味が強くありすぐに働き始めたい</option>
                   <option>興味がありまずは詳しい内容が知りたい</option>
@@ -396,7 +396,7 @@
             </li>
             <li>
               <label>特記事項・コメント</label>
-              <textarea cols="6" class="form_basic form_basic_textarea" placeholder="お問い合わせ内容をお書きください" required></textarea>
+              <textarea cols="6" class="form_basic form_basic_textarea" placeholder="お問い合わせ内容をお書きください" required id="text"></textarea>
             </li>
           </ul>
           <input type="submit" name="" value="送信する" class="js_form_submit btn btn-02">
